@@ -67,8 +67,6 @@ namespace HeroStore.App_Start
                 .To<ProductService>();
             kernel.Bind<ICustomerService>()
                 .To<CustomerService>();
-            kernel.Bind<ICart>()
-                .To<Cart>().InSingletonScope();
         }        
     }
 }
